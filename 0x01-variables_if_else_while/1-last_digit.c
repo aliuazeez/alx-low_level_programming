@@ -4,11 +4,8 @@
 
 /**
  * main - prints the last digit of the random
- *
  * number stored in the variable n
- *
- * return - always 0 (success)
- *
+ * return: - Always 0 (success)
  */
 int main(void)
 {
@@ -22,7 +19,6 @@ int main(void)
 	else if (n % 10 == 0)
 		printf("and is 0\n");
 	else if (n % 10 < 6 && n % 10 != 0)
-		printf("and is less than 6 and not 0\n");
-	
+		printf("and is less than 6 and not 0\n");	
 	return (0);
 }
