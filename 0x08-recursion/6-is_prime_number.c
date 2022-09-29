@@ -9,7 +9,7 @@ int check_prime(int d, int f)
 {
 	if (f < 2 || f % d == 0)
 		return (0);
-	else if (f > p / 2)
+	else if (f > d / 2)
 		return (1);
 	else
 		return (check_prime(d + 1, f));
