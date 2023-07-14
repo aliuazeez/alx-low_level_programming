@@ -2,18 +2,14 @@
 /**
  * main - printing types size
  *
- * Return' always 0
+ * Return: always 0
  */
 int main(void)
 {
-	printf("size of char: %u byte(s)\n", (unsigned int)sizeof(char));
-
-	printf("size of int: %u byte(s)\n", (unsigned int)sizeof(int));
-
-	printf("size of long int: %u byte(s)\n", (unsigned int)sizeof(long int));
-
-	printf("size of long long int: %u byte(s)\n", (unsigned int)sizeof(long long int));
-
-	printf("size of float: %u byte(s)\n", (unsigned int)sizeof(float));
+	printf("size of a char: %u byte(s)\n", (int)sizeof(char));
+	printf("size of an int: %u byte(s)\n", (int)sizeof(int));
+	printf("size of a long int: %u byte(s)\n", (int)sizeof(long int));
+	printf("size of a long long int: %u byte(s)\n", (int)sizeof(long long int));
+	printf("size of a float: %u byte(s)\n", (int)sizeof(float));
 	return (0);
 }
