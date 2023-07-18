@@ -20,4 +20,5 @@ int print_last_digit(int i)
 
 	b = _abs(i);
 	return (b % 10);
+	return (b % 10);
 }
