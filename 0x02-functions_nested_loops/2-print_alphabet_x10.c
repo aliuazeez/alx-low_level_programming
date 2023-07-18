@@ -19,5 +19,5 @@ void print_alphabet_x10(void)
 		}
 		a = 'a';
 	}
-	_putchar('\n);
+	_putchar('\n');
 }
