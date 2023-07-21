@@ -4,7 +4,7 @@
 /* more headers goes there */
 /**
  * positive_or_negative - test for +ve or -ve
- *
+ * @i: int to test
  * Return: always 0
  */
 /* betty style doc for function main goes there */
