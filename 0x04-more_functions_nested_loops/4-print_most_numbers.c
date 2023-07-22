@@ -11,8 +11,7 @@ void print_most_numbers(void)
 
 	for (a = 48; a <= 57; a++)
 	{
-		_putchar(a);
-		while (a != 2 || a != 4)
-			a++;
+		if (a != 2 || a != 4)
+			_putchar(a)
 	}
 }
