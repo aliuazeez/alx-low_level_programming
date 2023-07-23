@@ -9,21 +9,18 @@
 int main(void)
 {
 	int i;
-	char fizz[] = "Fizz";
-	char buzz[] = "Buzz";
-	char fb[] = "FizzBuzz";
-
+	
 	for (i = 1; i <= 100; i++)
 	{
 		if (((i % 3) == 0) && ((i % 5) == 0))
-			printf("%s ", fb);
+			printf("FizzBuzz ");
 		else if ((i % 3) == 0)
-			printf("%s ", fizz);
+			printf("Fizz ");
 		else if ((i % 5) == 0)
-			printf("%s ", buzz);
+			printf("Buzz ");
 		else
 			printf("%d ", i);
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
