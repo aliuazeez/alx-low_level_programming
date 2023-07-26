@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _strlen - vounts the no of string
+ * _strlen - vounts the no of string
  * @s: string to br counted
  * Return: nothing
  */
