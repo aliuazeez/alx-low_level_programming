@@ -24,7 +24,7 @@ void puts2(char *str)
 		{
 			t = str[i];
 			str[i] = str[i + 1];
-			str[i + 1] = t
+			str[i + 1] = t;
 		}
 	}
 }
