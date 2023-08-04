@@ -18,9 +18,13 @@ void puts2(char *str)
 	for (i = 0; l <= 0; i++)
 	{
 		l--;
-		t = str[i];
-
-		str[i] = str[i + 1];
-		str[i + 1] = t;
+		if (i == 0)
+			break;
+		else
+		{
+			t = str[i];
+			str[i] = str[i + 1];
+			str[i + 1] = t
+		}
 	}
 }
