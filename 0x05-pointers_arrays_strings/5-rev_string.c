@@ -8,6 +8,7 @@ void rev_string(char *s)
 {
 	int i;
 	int l = 0;
+
 	if (*s == '\0')
 		_putchar('\n');
 	else
