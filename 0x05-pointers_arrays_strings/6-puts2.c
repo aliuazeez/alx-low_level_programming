@@ -9,6 +9,7 @@ void puts2(char *str)
 {
 	int i = 0;
 	int l = 0;
+	char t;
 
 	if (*str == '\0')
 		return;
@@ -17,9 +18,9 @@ void puts2(char *str)
 	for (i = 0; l <= 0; i++)
 	{
 		l--;
-		char t = str[i];
+		t = str[i];
 
 		str[i] = str[i + 1];
 		str[i + 1] = t;
 	}
-
+}
