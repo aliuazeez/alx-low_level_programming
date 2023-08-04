@@ -10,12 +10,12 @@ void rev_string(char *s)
 	int l = 0;
 
 	if (*s == '\0')
-		_putchar(' ');
+		return;
 	else
 	{
 		while (s[l] != '\0')
 			l++;
-		for (i = 0; i >= l / 2; i++)
+		for (i = 0; i < l / 2; i++)
 		{
 			char t = s[i];
 			s[i] = s[l - 1 - i];
