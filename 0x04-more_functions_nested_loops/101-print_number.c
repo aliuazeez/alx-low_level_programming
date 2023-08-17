@@ -12,11 +12,7 @@ void print_number(int n)
 		_putchar(n + '0');
 	else
 	{
-		while (n)
-		{
-			i = (n % 10) + '0';
-			_putchar(i);
-			n / 10;
-		}
+		print_number(n / 10);
+		_putchar((n % 10) + '0');
 	}
 }
