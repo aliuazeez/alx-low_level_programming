@@ -6,8 +6,6 @@
  */
 void print_number(int n)
 {
-	int i;
-
 	if (n <= 9)
 		_putchar(n + '0');
 	else
