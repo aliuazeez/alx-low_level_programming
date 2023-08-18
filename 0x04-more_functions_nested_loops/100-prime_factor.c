@@ -14,14 +14,14 @@ int main(void)
 		if (n % i == 0)
 		{
 			j = i;
-			while (n / i == 0)
+			while (n % i == 0)
 			{
 				n /= i;
 			}
 		}
 		i++;
 	}
-	
 	printf("%d\n", j);
 	return (0);
 }
+
