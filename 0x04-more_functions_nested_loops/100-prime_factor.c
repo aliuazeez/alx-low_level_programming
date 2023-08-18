@@ -7,11 +7,12 @@ int main(void)
 {
 	long int n = 612852475143;
 	int i = 2;
+	int j;
 
 	while (n % i != 0 && n / i == 1)
 	{
 		i++;
-		int j = i;
+		j = i;
 	}
 	printf("%d \n", j);
 	return (0);
