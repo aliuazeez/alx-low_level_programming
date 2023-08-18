@@ -11,7 +11,8 @@ int main(void)
 	while (n % i != 0 && n / i == 1)
 	{
 		i++;
+		int j = i;
 	}
-	printf("%d \n", i);
+	printf("%d \n", j);
 	return (0);
 }
