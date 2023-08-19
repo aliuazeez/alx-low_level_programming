@@ -11,7 +11,7 @@ void print_array(int *a, int n)
 	int i = 0;
 	int j = n;
 
-	if (n == 0)
+	if (n <= 0)
 	{
 		putchar('\n');
 		return;
