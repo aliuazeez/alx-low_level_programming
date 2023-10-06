@@ -1,0 +1,10 @@
+1c1
+< [Got]
+---
+> [Expected]
+4,5c4,5
+< (60 chars long)
+< [stderr]: 
+---
+> (59 chars long)
+> [stderr]: [Anything]
