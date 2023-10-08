@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	write(2, QUOTE", sizeof(QUOTE));
+	write(2, QUOTE, sizeof(QUOTE));
 	return (1);
 }
 
