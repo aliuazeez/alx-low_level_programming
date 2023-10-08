@@ -1,5 +1,5 @@
 #include <unistd.h>
-#define QUOTE "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n"
+#define QUOTE "and that piece of art is useful\" - Dora Korpar, 2015-10-19"
 /**
  * main - main application
  * Return: 1
