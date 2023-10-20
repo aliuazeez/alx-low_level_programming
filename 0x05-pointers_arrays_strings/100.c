@@ -1,10 +1,9 @@
 #include "main.h"
 #include <limits.h>
-#include <stdio.h>
 /**
- * _atoi - convert strings to int
+ * _atoi - convert
  * @s: the string to convert to int
- * Return: int value
+ * Return: int
  */
 int _atoi(char *s)
 {
@@ -14,7 +13,7 @@ int _atoi(char *s)
 
 	while (s[i] == ' ')
 		i++;
-	while(s[i] == '-' || s[i] == '+')
+	while (s[i] == '-' || s[i] == '+')
 	{
 		if (s[i] == '-')
 			sign *= -1;
@@ -24,7 +23,7 @@ int _atoi(char *s)
 	{
 		if (result > INT_MAX / 10 || (result == INT_MAX / 10 && s[i] - '0' > INT_MAX % 10))
 		{
-			return (sign == 1) ? INT_MAX : INT_MIN;
+			return ((sign == 1) ? INT_MAX : INT_MIN);
 		}
 		result = result * 10 + (s[i] - '0');
 		i++;
