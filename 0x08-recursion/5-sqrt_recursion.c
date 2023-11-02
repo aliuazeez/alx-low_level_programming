@@ -10,7 +10,7 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if (n == 0 || n == 1)
 		return (n);
-	return _sqrt_checker(n, 1, n);
+	return (_sqrt_checker(n, 1, n));
 }
 /**
  * _sqrt_checker - checker
@@ -21,11 +21,13 @@ int _sqrt_recursion(int n)
  */
 int _sqrt_checker(int n, int bgn, int end)
 {
-	int mid = (bgn + end) / 2;
-
 	if (bgn > end)
-		return (mid);
-	if ((mid * mid) > n)
+		return (-1);
+	int mid = (bgn + (end - bgn)) / 2;
+
+	if (mid > (n / mid))
 		return (_sqrt_checker(n, bgn, mid - 1));
+	if (mid * mid == n)
+		return (mid);
 	return (_sqrt_checker(n, mid + 1, end));
 }
