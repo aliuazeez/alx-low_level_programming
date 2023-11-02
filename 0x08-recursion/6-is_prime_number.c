@@ -10,6 +10,12 @@ int is_prime_number(int n)
 		return (0);
 	return (is_prime_check(n, 2));
 }
+/**
+ * is_prime_check - check for prime number
+ * @n: no to check
+ * @div: the divisor to check
+ * Return: integer
+ */
 int is_prime_check(int n, int div)
 {
 	if (n == div)

@@ -25,7 +25,7 @@ int _sqrt_checker(int n, int bgn, int end)
 
 	if (bgn > end)
 		return (mid);
-	if (mid * mid) > n)
+	if ((mid * mid) > n)
 		return (_sqrt_checker(n, bgn, mid - 1));
 	return (_sqrt_checker(n, mid + 1, end));
 }
