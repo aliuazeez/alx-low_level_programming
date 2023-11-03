@@ -21,10 +21,10 @@ int _sqrt_recursion(int n)
  */
 int _sqrt_checker(int n, int bgn, int end)
 {
-	if (bgn > end)
-		return (-1);
 	int mid = bgn + (end - bgn) / 2;
 
+	if (bgn > end)
+		return (-1);
 	if (mid > (n / mid))
 		return (_sqrt_checker(n, bgn, mid - 1));
 	if (mid * mid == n)
