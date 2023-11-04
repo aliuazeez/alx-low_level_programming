@@ -8,15 +8,17 @@
  */
 int main(int argc, char *argv[])
 {
-	int c = 0;
+	if (argc == 3)
+	{
+		int i = atoi(argv[1]);
+		int j = atoi(argv[2]);
 
-	if (*argv[0] == '\0')
-		printf("0");
+		printf("%d\n", i * j);
+		return (0);
+	}
 	else
 	{
-		while (c < argc)
-			c++;
-		printf("%d\n", c - 1);
+		printf("Error\n");
+		return (1);
 	}
-	return (0);
 }

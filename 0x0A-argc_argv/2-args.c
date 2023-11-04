@@ -11,12 +11,14 @@ int main(int argc, char *argv[])
 	int c = 0;
 
 	if (*argv[0] == '\0')
-		printf("0");
+		printf("%s\n", argv[c]);
 	else
 	{
 		while (c < argc)
+		{
+			printf("%s\n", argv[c]);
 			c++;
-		printf("%d\n", c - 1);
+		}
 	}
 	return (0);
 }
