@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 /**
@@ -10,6 +11,7 @@
 char *argstostr(int ac, char **av)
 {
 	int length;
+	int total_length;
 	int i;
 	int index = 0;
 	char *concat;
@@ -26,7 +28,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		lenght = strlen(av[i]);
+		length = strlen(av[i]);
 		strcpy(concat + index, av[i]);
 		index = index + length;
 		concat[index++] = '\n';
