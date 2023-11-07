@@ -7,7 +7,7 @@
  * @av: argument vector
  * Return: argument as string
  */
-char *argstostr(int ac, char av)
+char *argstostr(int ac, char **av)
 {
 	int length;
 	int i;
