@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlid.h>
+#include <stdlib.h>
 #include <string.h>
 /**
  * _strdup - duplicate string
@@ -8,9 +8,12 @@
  */
 char *_strdup(char *str)
 {
+	char *dup;
+
 	if (str == NULL)
 		return (NULL);
-	char *dup == malloc((strlen(str) + 1) * sizeof(char));
+
+	*dup == malloc((strlen(str) + 1) * sizeof(char));
 
 	if (dup == NULL)
 		return (NULL);
