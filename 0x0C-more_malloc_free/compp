@@ -1,0 +1,48 @@
+1d0
+< #include "main.h"
+3d1
+< #include <stdio.h>
+5,9c3,7
+<  * string_nconcat - concatenate two strings
+<  * @s1: destination of concatenated string
+<  * @s2: second string
+<  * @n: number of byte to be copied
+<  * Return: concatenated string
+---
+>  * string_nconcat -concatenate two strings
+>  * @s1: destinantion string
+>  * @s2: source string
+>  * @n: size of string to be copy from s2
+>  * Return: s1
+13d10
+< 	unsigned int s1_len = 0, s2_len = 0;
+15,16c12,13
+< 	unsigned int i, j;
+< 
+---
+> 	unsigned int s1_len = 0, s2_len = 0, concat_len = 0, i, j;
+> 	
+18c15
+< 		s1 = " ";
+---
+> 		s1 = "";
+20c17
+< 		s2 = " ";
+---
+> 		s2 = "";
+25c22
+< 	if (n >= s2_len)
+---
+> 	if (n > s2_len)
+27c24,25
+< 	concat = malloc(s1_len + n + 1);
+---
+> 	concat_len = s1_len + n;
+> 	concat = malloc(sizeof(char) * (concat_len + 1));
+34c32,33
+< 	return (concat);
+---
+> 	concat[concat_len] = '\0';
+> 	return concat;
+35a35
+> 
